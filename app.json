@@ -17,13 +17,14 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "org.name.todocleanandsimple"
-    },
-    "android": {
+    },    "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/android-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.todocleanandsimple"
+      "package": "com.todocleanandsimple",
+      "statusBarBackgroundColor": "@android:color/transparent",
+      "statusBarTranslucent": true
     },
     "web": {
       "favicon": "./assets/icon.png"

@@ -6,6 +6,7 @@ import {
   SafeAreaView
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+import { StatusBar } from 'expo-status-bar';
 import DayBlock from './components/DayBlock';
 import AddTaskModal from './components/AddTaskModal';
 import ThemeToggle from './components/ThemeToggle';
@@ -62,6 +63,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={[styles.gradient, { backgroundColor: colorScheme === 'dark' ? '#222' : '#eee' }]}> 
+      <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} backgroundColor={colorScheme === 'dark' ? '#222' : '#eee'} />
       <View style={[styles.container, { backgroundColor: 'transparent' }]}> 
         <LinearGradient colors={listGradientColors} style={styles.listGradient} start={{x:0.5, y:0}} end={{x:0.5, y:1}}>
           <ScrollView contentContainerStyle={{ paddingBottom: 80 }}>
