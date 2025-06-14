@@ -31,7 +31,7 @@ extensions.configure(com.facebook.react.ReactSettingsExtension) { ex ->
 }
 expoAutolinking.useExpoModules()
 
-rootProject.name = 'todocleanandsimple'
+rootProject.name = 'To Do Clean and Simple'
 
 expoAutolinking.useExpoVersionCatalog()
 
