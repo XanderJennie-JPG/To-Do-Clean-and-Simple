@@ -63,7 +63,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={[styles.gradient, { backgroundColor: colorScheme === 'dark' ? '#222' : '#eee' }]}> 
-      <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} backgroundColor={colorScheme === 'dark' ? '#222' : '#eee'} />
+      <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
       <View style={[styles.container, { backgroundColor: 'transparent' }]}> 
         <LinearGradient colors={listGradientColors} style={styles.listGradient} start={{x:0.5, y:0}} end={{x:0.5, y:1}}>
           <ScrollView contentContainerStyle={{ paddingBottom: 80 }}>

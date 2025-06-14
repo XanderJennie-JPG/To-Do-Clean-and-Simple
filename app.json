@@ -28,10 +28,12 @@
     },
     "web": {
       "favicon": "./assets/icon.png"
-    },
-    "plugins": [
+    },    "plugins": [
       "expo-dev-client"
     ],
+    "experiments": {
+      "edgeToEdge": false
+    },
     "extra": {
       "eas": {
         "projectId": "665eab4c-3de9-4c4c-aab6-90841ea1bf45"
